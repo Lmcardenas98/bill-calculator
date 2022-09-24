@@ -1,38 +1,134 @@
-.App {
-  text-align: center;
+body{
+  background-color: rgb(200, 227, 230);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  background-color: white;
+  min-width: 550px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.amount-container{
+  background-color: rgb(27, 73, 76);
+  padding: 25px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  max-width: 208px;
+  width: 100%;
+}
+
+.separatos{
+  display: grid;
+  gap: 10px;
+}
+
+.tip-amount-container{
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  font-size: .5em;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.amount-text p{
+  color: grey;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.amount-value{
+  font-size: 35px;
+  color: rgb(82, 192, 172);
+}
+
+.amount-value p{
+  margin: 0;
+}
+
+.reset-btn{
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(78, 194, 170);
+}
+
+.reset-btn:hover{
+  background-color: rgb(90, 224, 197);
+}
+
+.bill-container{
+  padding: 0 15px;
+  max-width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.btns-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.btns-container button{
+  width: 80px;
+  padding: 7px;
+  border: none;
+  background-color: rgb(27, 73, 76);
+  color: white;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.btns-container button:hover{
+  background-color: rgb(78, 194, 170);
+  color: black;
+}
+
+.labbel{
+  font-size: 12px;
+  color: rgb(114, 126, 126);
+  margin-bottom: 5px;
+}
+
+.bill-input{
+  background-color: rgb(243, 248, 251);
+  display: flex;
+  align-items: center;
+  height: 30px;
+  padding: 3px 10px;
+  border-radius: 5px;
+}
+
+.bill-input input{
+  border: none;
+  background-color:  rgb(243, 248, 251);
+  width: 100%;
+  text-align: end;
+}
+
+.bill-input input:focus {
+  border: none;
+  outline: none;
+}
+
+
+@media (max-width: 500px){
+  .app{
+    flex-direction: column;
+    min-width: auto;
+    align-items: center;
+    gap: 20px;
+  } 
 }

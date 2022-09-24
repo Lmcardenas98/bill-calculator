@@ -1,24 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState, useEffect } from 'react'
+import Amount from './components/Amount';
+import UserContext from './context/AppContext';
+import Bill from './components/Bill';
+
 
 function App() {
+
+  const [bill, setBill] = useState(0)
+  const [tip, setTip] = useState(0)
+  const [num, setNum] = useState(0)
+  const [totalPer, setTotalPer] = useState(0)
+
+  useEffect(()=> {
+    setTotalPer(Math.round(bill/num+(bill/num*tip/100)))
+  }, [bill, tip, num])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <UserContext.Provider value={{
+        bill: bill,
+        tip: tip,
+        num:num,
+        totalPer: totalPer,
+        setTotalPer: setTotalPer,
+        setTip: setTip,
+        setNum: setNum,
+        setBill: setBill
+      }}>
+      <div className="app">
+        <Bill />
+        <Amount /> 
+      </div>
+    </UserContext.Provider>
   );
 }
 
