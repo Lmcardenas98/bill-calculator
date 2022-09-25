@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Lmcardenas98/bill-calculator/static/css/main.5e4ade72.css",
-    "main.js": "/Lmcardenas98/bill-calculator/static/js/main.820b3f61.js",
-    "static/media/icon-dollar.svg": "/Lmcardenas98/bill-calculator/static/media/icon-dollar.9f9be3534a9295a6595764d63a7bf3a3.svg",
-    "static/media/icon-person.svg": "/Lmcardenas98/bill-calculator/static/media/icon-person.65bfd20465dd1d2cb58c0b53e1160442.svg",
-    "index.html": "/Lmcardenas98/bill-calculator/index.html",
-    "main.5e4ade72.css.map": "/Lmcardenas98/bill-calculator/static/css/main.5e4ade72.css.map",
-    "main.820b3f61.js.map": "/Lmcardenas98/bill-calculator/static/js/main.820b3f61.js.map"
+    "main.css": "./static/css/main.5e4ade72.css",
+    "main.js": "./static/js/main.fc8d0927.js",
+    "static/media/icon-dollar.svg": "./static/media/icon-dollar.9f9be3534a9295a6595764d63a7bf3a3.svg",
+    "static/media/icon-person.svg": "./static/media/icon-person.65bfd20465dd1d2cb58c0b53e1160442.svg",
+    "index.html": "./index.html",
+    "main.5e4ade72.css.map": "./static/css/main.5e4ade72.css.map",
+    "main.fc8d0927.js.map": "./static/js/main.fc8d0927.js.map"
   },
   "entrypoints": [
     "static/css/main.5e4ade72.css",
-    "static/js/main.820b3f61.js"
+    "static/js/main.fc8d0927.js"
   ]
 }
